@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
     --background-color: #00090E;
     --text-color: #E1E1E1;
@@ -23,7 +25,6 @@ body{
     display: flex;
     align-items: start;
 
-    display: flex;
     gap: 27px;
     padding: 56px;
 }
@@ -34,6 +35,71 @@ aside{
     height: 100vh;
     padding: 40px 16px;
     text-align: center;
+}
+
+main{
+    background-color: var(--itens-background);
+    display: flex;
+    padding: 32px;
+    gap: 24px;
+    border-radius: 10px;
+}
+
+h2{
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 26px;
+}
+
+form{
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 18px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px 16px 8px 16px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    gap: 4px;
+    font-family: var(--font-family);
+}
+
+textarea{
+    width: 100%;
+    padding: 8px 16px 8px 16px;
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    border: none;
+    border-radius: 5px;
+    gap: 4px;
+    font-family: var(--font-family);
+}
+
+.listTags{
+    display: flex;
+    justify-content: space-between;
+}
+
+.listTags p{
+    display: flex;
+    background-color: var(--secondary-color);
+    font-family: var(--font-family);
+    border-radius: 5px;
+    gap: 10px;
+    padding: 8px 4px 8px 4px;
+}
+
+.imageUpload img{
+    width: 450px;
+    height: 320px;
 }
 
 .list-links{
